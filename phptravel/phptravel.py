@@ -187,6 +187,16 @@ class Tests:
 
         if self.page_objects.page_title in self.session.driver.title:
             self.logger.log_data(f"Page LOADED in {time_loaded} seconds \n\n")
+
+            # accepting cookies
+            cookies = self.session.find_element_by_xpath(xpath="//div[@id='cookyGotItBtnBox']//button[@role='button']")
+            if cookies:
+                try:
+                    cookies.click()
+                    time.sleep(2)
+                    self.logger.log_data("Cookies accepted  >>  PASS\n")
+                except Exception as e:
+                    self.logger.log_data(f"Failed to accept cookies. Error: {e}  >>  FAIL\n")
         else:
             self.logger.log_data(f"Page FAILED to load. Exiting tests...\n")
             self.page_loaded = False
@@ -331,9 +341,9 @@ class Tests:
         if destination_field_not_selected:
             destination_field_not_selected.click()
             if destination_field_not_selected.is_enabled():
-                self.logger.log_data("'Destionation' field can be selected  >>  PASS")
+                self.logger.log_data("'Destination' field can be selected  >>  PASS")
             else:
-                self.logger.log_data("'Destionation' field cannot be selected  >>  FAIL")
+                self.logger.log_data("'Destination' field cannot be selected  >>  FAIL")
 
         destination_field_selected = self.session.find_element_by_xpath(xpath=self.page_objects.hotels_menu.destination_field_active)
         if destination_field_selected:
