@@ -1,0 +1,591 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CA018E5C2395AB78004CE8E6 /* malware.edr.zip in CopyFiles */ = {isa = PBXBuildFile; fileRef = CA018E5B2395AB78004CE8E6 /* malware.edr.zip */; };
+		CA018E602395B60F004CE8E6 /* poc_http_py3.py.zip in CopyFiles */ = {isa = PBXBuildFile; fileRef = CA018E5F2395B60F004CE8E6 /* poc_http_py3.py.zip */; };
+		CA06A08223954EB600536B52 /* malware.packed.zip in CopyFiles */ = {isa = PBXBuildFile; fileRef = CA06A07123954EB500536B52 /* malware.packed.zip */; };
+		CA06A08323954EB600536B52 /* malware.dialer.zip in CopyFiles */ = {isa = PBXBuildFile; fileRef = CA06A07223954EB500536B52 /* malware.dialer.zip */; };
+		CA06A08423954EB600536B52 /* malware.deletion.cleanable.zip in CopyFiles */ = {isa = PBXBuildFile; fileRef = CA06A07323954EB500536B52 /* malware.deletion.cleanable.zip */; };
+		CA06A08523954EB600536B52 /* malware.keylogger.zip in CopyFiles */ = {isa = PBXBuildFile; fileRef = CA06A07423954EB500536B52 /* malware.keylogger.zip */; };
+		CA06A08623954EB600536B52 /* malware.clean.by.delete.zip in CopyFiles */ = {isa = PBXBuildFile; fileRef = CA06A07523954EB500536B52 /* malware.clean.by.delete.zip */; };
+		CA06A08723954EB600536B52 /* malware.pua.zip in CopyFiles */ = {isa = PBXBuildFile; fileRef = CA06A07623954EB500536B52 /* malware.pua.zip */; };
+		CA06A08823954EB600536B52 /* malware.remains.cleanable.zip in CopyFiles */ = {isa = PBXBuildFile; fileRef = CA06A07723954EB500536B52 /* malware.remains.cleanable.zip */; };
+		CA06A08923954EB600536B52 /* malware.adware.zip in CopyFiles */ = {isa = PBXBuildFile; fileRef = CA06A07823954EB500536B52 /* malware.adware.zip */; };
+		CA06A08A23954EB600536B52 /* malware.uncleanable.zip in CopyFiles */ = {isa = PBXBuildFile; fileRef = CA06A07923954EB500536B52 /* malware.uncleanable.zip */; };
+		CA06A08B23954EB600536B52 /* malware.signed.infected.zip in CopyFiles */ = {isa = PBXBuildFile; fileRef = CA06A07A23954EB500536B52 /* malware.signed.infected.zip */; };
+		CA06A08C23954EB600536B52 /* malware.smartdb.zip in CopyFiles */ = {isa = PBXBuildFile; fileRef = CA06A07B23954EB500536B52 /* malware.smartdb.zip */; };
+		CA06A08D23954EB600536B52 /* malware.eicar.zip in CopyFiles */ = {isa = PBXBuildFile; fileRef = CA06A07C23954EB500536B52 /* malware.eicar.zip */; };
+		CA06A08E23954EB600536B52 /* malware.suspected.zip in CopyFiles */ = {isa = PBXBuildFile; fileRef = CA06A07D23954EB500536B52 /* malware.suspected.zip */; };
+		CA06A08F23954EB600536B52 /* malware.application.zip in CopyFiles */ = {isa = PBXBuildFile; fileRef = CA06A07E23954EB500536B52 /* malware.application.zip */; };
+		CA06A09023954EB600536B52 /* malware.signed.suspected.zip in CopyFiles */ = {isa = PBXBuildFile; fileRef = CA06A07F23954EB500536B52 /* malware.signed.suspected.zip */; };
+		CA06A09123954EB600536B52 /* malware.spyware.zip in CopyFiles */ = {isa = PBXBuildFile; fileRef = CA06A08023954EB600536B52 /* malware.spyware.zip */; };
+		CA1F26E323979675006727EB /* rca_poc1.zip in CopyFiles */ = {isa = PBXBuildFile; fileRef = CA1F26E223979675006727EB /* rca_poc1.zip */; };
+		CA48918C23905BB400D43E60 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CA48918B23905BB400D43E60 /* AppDelegate.m */; };
+		CA48918E23905BB500D43E60 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CA48918D23905BB500D43E60 /* Assets.xcassets */; };
+		CA48919123905BB500D43E60 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = CA48918F23905BB500D43E60 /* MainMenu.xib */; };
+		CA48919423905BB500D43E60 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CA48919323905BB500D43E60 /* main.m */; };
+		CA48919D23906E1C00D43E60 /* Samples.m in Sources */ = {isa = PBXBuildFile; fileRef = CA48919C23906E1C00D43E60 /* Samples.m */; };
+		CA4DD602239928000094979E /* atc_poc_sudospawn.sh.zip in CopyFiles */ = {isa = PBXBuildFile; fileRef = CA4DD601239927FF0094979E /* atc_poc_sudospawn.sh.zip */; };
+		CA4DD606239997B30094979E /* malware.eicar.size.zip in CopyFiles */ = {isa = PBXBuildFile; fileRef = CA4DD605239997B30094979E /* malware.eicar.size.zip */; };
+		CA4DD608239997D80094979E /* large_batTrojan.zip in CopyFiles */ = {isa = PBXBuildFile; fileRef = CA4DD607239997D80094979E /* large_batTrojan.zip */; };
+		CA6C65322394FB5500E72EFA /* libz.1.2.11.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = CA6C65312394FB5500E72EFA /* libz.1.2.11.tbd */; };
+		CA6C65342394FB6400E72EFA /* libiconv.2.4.0.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = CA6C65332394FB6400E72EFA /* libiconv.2.4.0.tbd */; };
+		CA8619822391628400AD3A23 /* mz_strm_os_posix.c in Sources */ = {isa = PBXBuildFile; fileRef = CA8619622391628400AD3A23 /* mz_strm_os_posix.c */; };
+		CA8619832391628400AD3A23 /* mz_strm_pkcrypt.c in Sources */ = {isa = PBXBuildFile; fileRef = CA8619632391628400AD3A23 /* mz_strm_pkcrypt.c */; };
+		CA8619842391628400AD3A23 /* mz_strm_zlib.c in Sources */ = {isa = PBXBuildFile; fileRef = CA8619662391628400AD3A23 /* mz_strm_zlib.c */; };
+		CA8619852391628400AD3A23 /* mz_zip.c in Sources */ = {isa = PBXBuildFile; fileRef = CA8619672391628400AD3A23 /* mz_zip.c */; };
+		CA8619862391628400AD3A23 /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = CA8619692391628400AD3A23 /* LICENSE */; };
+		CA8619872391628400AD3A23 /* mz_zip_rw.c in Sources */ = {isa = PBXBuildFile; fileRef = CA86196A2391628400AD3A23 /* mz_zip_rw.c */; };
+		CA8619882391628400AD3A23 /* mz_crypt_apple.c in Sources */ = {isa = PBXBuildFile; fileRef = CA86196D2391628400AD3A23 /* mz_crypt_apple.c */; };
+		CA8619892391628400AD3A23 /* mz_strm_mem.c in Sources */ = {isa = PBXBuildFile; fileRef = CA86196F2391628400AD3A23 /* mz_strm_mem.c */; };
+		CA86198A2391628400AD3A23 /* mz_crypt.c in Sources */ = {isa = PBXBuildFile; fileRef = CA8619702391628400AD3A23 /* mz_crypt.c */; };
+		CA86198B2391628400AD3A23 /* mz_strm_wzaes.c in Sources */ = {isa = PBXBuildFile; fileRef = CA8619712391628400AD3A23 /* mz_strm_wzaes.c */; };
+		CA86198C2391628400AD3A23 /* mz_compat.c in Sources */ = {isa = PBXBuildFile; fileRef = CA8619732391628400AD3A23 /* mz_compat.c */; };
+		CA86198D2391628400AD3A23 /* mz_os.c in Sources */ = {isa = PBXBuildFile; fileRef = CA8619762391628400AD3A23 /* mz_os.c */; };
+		CA86198E2391628400AD3A23 /* mz_os_posix.c in Sources */ = {isa = PBXBuildFile; fileRef = CA8619782391628400AD3A23 /* mz_os_posix.c */; };
+		CA86198F2391628400AD3A23 /* mz_strm_buf.c in Sources */ = {isa = PBXBuildFile; fileRef = CA86197A2391628400AD3A23 /* mz_strm_buf.c */; };
+		CA8619902391628400AD3A23 /* mz_strm_split.c in Sources */ = {isa = PBXBuildFile; fileRef = CA86197B2391628400AD3A23 /* mz_strm_split.c */; };
+		CA8619912391628400AD3A23 /* mz_strm.c in Sources */ = {isa = PBXBuildFile; fileRef = CA86197E2391628400AD3A23 /* mz_strm.c */; };
+		CA8619922391628400AD3A23 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = CA8619802391628400AD3A23 /* Info.plist */; };
+		CA8619932391628400AD3A23 /* SSZipArchive.m in Sources */ = {isa = PBXBuildFile; fileRef = CA8619812391628400AD3A23 /* SSZipArchive.m */; };
+		CA86199A2391678100AD3A23 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CA8619992391678100AD3A23 /* Security.framework */; };
+		CADE337D2396FE4200B96ADF /* poc_http.py.zip in CopyFiles */ = {isa = PBXBuildFile; fileRef = CADE337C2396FE4200B96ADF /* poc_http.py.zip */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		CA06A06F23954E9600536B52 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 7;
+			files = (
+				CA4DD608239997D80094979E /* large_batTrojan.zip in CopyFiles */,
+				CA4DD606239997B30094979E /* malware.eicar.size.zip in CopyFiles */,
+				CA4DD602239928000094979E /* atc_poc_sudospawn.sh.zip in CopyFiles */,
+				CA1F26E323979675006727EB /* rca_poc1.zip in CopyFiles */,
+				CADE337D2396FE4200B96ADF /* poc_http.py.zip in CopyFiles */,
+				CA018E602395B60F004CE8E6 /* poc_http_py3.py.zip in CopyFiles */,
+				CA018E5C2395AB78004CE8E6 /* malware.edr.zip in CopyFiles */,
+				CA06A08223954EB600536B52 /* malware.packed.zip in CopyFiles */,
+				CA06A08323954EB600536B52 /* malware.dialer.zip in CopyFiles */,
+				CA06A08423954EB600536B52 /* malware.deletion.cleanable.zip in CopyFiles */,
+				CA06A08523954EB600536B52 /* malware.keylogger.zip in CopyFiles */,
+				CA06A08623954EB600536B52 /* malware.clean.by.delete.zip in CopyFiles */,
+				CA06A08723954EB600536B52 /* malware.pua.zip in CopyFiles */,
+				CA06A08823954EB600536B52 /* malware.remains.cleanable.zip in CopyFiles */,
+				CA06A08923954EB600536B52 /* malware.adware.zip in CopyFiles */,
+				CA06A08A23954EB600536B52 /* malware.uncleanable.zip in CopyFiles */,
+				CA06A08B23954EB600536B52 /* malware.signed.infected.zip in CopyFiles */,
+				CA06A08C23954EB600536B52 /* malware.smartdb.zip in CopyFiles */,
+				CA06A08D23954EB600536B52 /* malware.eicar.zip in CopyFiles */,
+				CA06A08E23954EB600536B52 /* malware.suspected.zip in CopyFiles */,
+				CA06A08F23954EB600536B52 /* malware.application.zip in CopyFiles */,
+				CA06A09023954EB600536B52 /* malware.signed.suspected.zip in CopyFiles */,
+				CA06A09123954EB600536B52 /* malware.spyware.zip in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		CA018E5B2395AB78004CE8E6 /* malware.edr.zip */ = {isa = PBXFileReference; lastKnownFileType = archive.zip; path = malware.edr.zip; sourceTree = "<group>"; };
+		CA018E5F2395B60F004CE8E6 /* poc_http_py3.py.zip */ = {isa = PBXFileReference; lastKnownFileType = archive.zip; path = poc_http_py3.py.zip; sourceTree = "<group>"; };
+		CA06A07123954EB500536B52 /* malware.packed.zip */ = {isa = PBXFileReference; lastKnownFileType = archive.zip; path = malware.packed.zip; sourceTree = "<group>"; };
+		CA06A07223954EB500536B52 /* malware.dialer.zip */ = {isa = PBXFileReference; lastKnownFileType = archive.zip; path = malware.dialer.zip; sourceTree = "<group>"; };
+		CA06A07323954EB500536B52 /* malware.deletion.cleanable.zip */ = {isa = PBXFileReference; lastKnownFileType = archive.zip; path = malware.deletion.cleanable.zip; sourceTree = "<group>"; };
+		CA06A07423954EB500536B52 /* malware.keylogger.zip */ = {isa = PBXFileReference; lastKnownFileType = archive.zip; path = malware.keylogger.zip; sourceTree = "<group>"; };
+		CA06A07523954EB500536B52 /* malware.clean.by.delete.zip */ = {isa = PBXFileReference; lastKnownFileType = archive.zip; path = malware.clean.by.delete.zip; sourceTree = "<group>"; };
+		CA06A07623954EB500536B52 /* malware.pua.zip */ = {isa = PBXFileReference; lastKnownFileType = archive.zip; path = malware.pua.zip; sourceTree = "<group>"; };
+		CA06A07723954EB500536B52 /* malware.remains.cleanable.zip */ = {isa = PBXFileReference; lastKnownFileType = archive.zip; path = malware.remains.cleanable.zip; sourceTree = "<group>"; };
+		CA06A07823954EB500536B52 /* malware.adware.zip */ = {isa = PBXFileReference; lastKnownFileType = archive.zip; path = malware.adware.zip; sourceTree = "<group>"; };
+		CA06A07923954EB500536B52 /* malware.uncleanable.zip */ = {isa = PBXFileReference; lastKnownFileType = archive.zip; path = malware.uncleanable.zip; sourceTree = "<group>"; };
+		CA06A07A23954EB500536B52 /* malware.signed.infected.zip */ = {isa = PBXFileReference; lastKnownFileType = archive.zip; path = malware.signed.infected.zip; sourceTree = "<group>"; };
+		CA06A07B23954EB500536B52 /* malware.smartdb.zip */ = {isa = PBXFileReference; lastKnownFileType = archive.zip; path = malware.smartdb.zip; sourceTree = "<group>"; };
+		CA06A07C23954EB500536B52 /* malware.eicar.zip */ = {isa = PBXFileReference; lastKnownFileType = archive.zip; path = malware.eicar.zip; sourceTree = "<group>"; };
+		CA06A07D23954EB500536B52 /* malware.suspected.zip */ = {isa = PBXFileReference; lastKnownFileType = archive.zip; path = malware.suspected.zip; sourceTree = "<group>"; };
+		CA06A07E23954EB500536B52 /* malware.application.zip */ = {isa = PBXFileReference; lastKnownFileType = archive.zip; path = malware.application.zip; sourceTree = "<group>"; };
+		CA06A07F23954EB500536B52 /* malware.signed.suspected.zip */ = {isa = PBXFileReference; lastKnownFileType = archive.zip; path = malware.signed.suspected.zip; sourceTree = "<group>"; };
+		CA06A08023954EB600536B52 /* malware.spyware.zip */ = {isa = PBXFileReference; lastKnownFileType = archive.zip; path = malware.spyware.zip; sourceTree = "<group>"; };
+		CA1F26E223979675006727EB /* rca_poc1.zip */ = {isa = PBXFileReference; lastKnownFileType = archive.zip; path = rca_poc1.zip; sourceTree = "<group>"; };
+		CA48918723905BB400D43E60 /* The Detonator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "The Detonator.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CA48918A23905BB400D43E60 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		CA48918B23905BB400D43E60 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		CA48918D23905BB500D43E60 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = "../../../../../../../../obj tuto/The Detonator/The Detonator/Assets.xcassets"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CA48919023905BB500D43E60 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		CA48919223905BB500D43E60 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CA48919323905BB500D43E60 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		CA48919523905BB500D43E60 /* The_Detonator.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = The_Detonator.entitlements; sourceTree = "<group>"; };
+		CA48919B23906E1C00D43E60 /* Samples.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Samples.h; sourceTree = "<group>"; };
+		CA48919C23906E1C00D43E60 /* Samples.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Samples.m; sourceTree = "<group>"; };
+		CA4DD601239927FF0094979E /* atc_poc_sudospawn.sh.zip */ = {isa = PBXFileReference; lastKnownFileType = archive.zip; path = atc_poc_sudospawn.sh.zip; sourceTree = "<group>"; };
+		CA4DD605239997B30094979E /* malware.eicar.size.zip */ = {isa = PBXFileReference; lastKnownFileType = archive.zip; path = malware.eicar.size.zip; sourceTree = "<group>"; };
+		CA4DD607239997D80094979E /* large_batTrojan.zip */ = {isa = PBXFileReference; lastKnownFileType = archive.zip; path = large_batTrojan.zip; sourceTree = "<group>"; };
+		CA6C65312394FB5500E72EFA /* libz.1.2.11.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.1.2.11.tbd; path = usr/lib/libz.1.2.11.tbd; sourceTree = SDKROOT; };
+		CA6C65332394FB6400E72EFA /* libiconv.2.4.0.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libiconv.2.4.0.tbd; path = usr/lib/libiconv.2.4.0.tbd; sourceTree = SDKROOT; };
+		CA86195E2391628400AD3A23 /* SSZipCommon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SSZipCommon.h; sourceTree = "<group>"; };
+		CA86195F2391628400AD3A23 /* ZipArchive.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZipArchive.h; sourceTree = "<group>"; };
+		CA8619602391628400AD3A23 /* SSZipArchive.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SSZipArchive.h; sourceTree = "<group>"; };
+		CA8619622391628400AD3A23 /* mz_strm_os_posix.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = mz_strm_os_posix.c; sourceTree = "<group>"; };
+		CA8619632391628400AD3A23 /* mz_strm_pkcrypt.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = mz_strm_pkcrypt.c; sourceTree = "<group>"; };
+		CA8619642391628400AD3A23 /* mz_strm_wzaes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mz_strm_wzaes.h; sourceTree = "<group>"; };
+		CA8619652391628400AD3A23 /* mz_compat.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mz_compat.h; sourceTree = "<group>"; };
+		CA8619662391628400AD3A23 /* mz_strm_zlib.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = mz_strm_zlib.c; sourceTree = "<group>"; };
+		CA8619672391628400AD3A23 /* mz_zip.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = mz_zip.c; sourceTree = "<group>"; };
+		CA8619682391628400AD3A23 /* mz_os.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mz_os.h; sourceTree = "<group>"; };
+		CA8619692391628400AD3A23 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		CA86196A2391628400AD3A23 /* mz_zip_rw.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = mz_zip_rw.c; sourceTree = "<group>"; };
+		CA86196B2391628400AD3A23 /* mz_strm_split.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mz_strm_split.h; sourceTree = "<group>"; };
+		CA86196C2391628400AD3A23 /* mz_strm_buf.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mz_strm_buf.h; sourceTree = "<group>"; };
+		CA86196D2391628400AD3A23 /* mz_crypt_apple.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = mz_crypt_apple.c; sourceTree = "<group>"; };
+		CA86196E2391628400AD3A23 /* mz_strm.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mz_strm.h; sourceTree = "<group>"; };
+		CA86196F2391628400AD3A23 /* mz_strm_mem.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = mz_strm_mem.c; sourceTree = "<group>"; };
+		CA8619702391628400AD3A23 /* mz_crypt.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = mz_crypt.c; sourceTree = "<group>"; };
+		CA8619712391628400AD3A23 /* mz_strm_wzaes.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = mz_strm_wzaes.c; sourceTree = "<group>"; };
+		CA8619722391628400AD3A23 /* mz_strm_zlib.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mz_strm_zlib.h; sourceTree = "<group>"; };
+		CA8619732391628400AD3A23 /* mz_compat.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = mz_compat.c; sourceTree = "<group>"; };
+		CA8619742391628400AD3A23 /* mz_strm_pkcrypt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mz_strm_pkcrypt.h; sourceTree = "<group>"; };
+		CA8619752391628400AD3A23 /* mz_zip_rw.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mz_zip_rw.h; sourceTree = "<group>"; };
+		CA8619762391628400AD3A23 /* mz_os.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = mz_os.c; sourceTree = "<group>"; };
+		CA8619772391628400AD3A23 /* mz_zip.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mz_zip.h; sourceTree = "<group>"; };
+		CA8619782391628400AD3A23 /* mz_os_posix.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = mz_os_posix.c; sourceTree = "<group>"; };
+		CA8619792391628400AD3A23 /* mz.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mz.h; sourceTree = "<group>"; };
+		CA86197A2391628400AD3A23 /* mz_strm_buf.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = mz_strm_buf.c; sourceTree = "<group>"; };
+		CA86197B2391628400AD3A23 /* mz_strm_split.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = mz_strm_split.c; sourceTree = "<group>"; };
+		CA86197C2391628400AD3A23 /* mz_crypt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mz_crypt.h; sourceTree = "<group>"; };
+		CA86197D2391628400AD3A23 /* mz_strm_mem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mz_strm_mem.h; sourceTree = "<group>"; };
+		CA86197E2391628400AD3A23 /* mz_strm.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = mz_strm.c; sourceTree = "<group>"; };
+		CA86197F2391628400AD3A23 /* mz_strm_os.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mz_strm_os.h; sourceTree = "<group>"; };
+		CA8619802391628400AD3A23 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CA8619812391628400AD3A23 /* SSZipArchive.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SSZipArchive.m; sourceTree = "<group>"; };
+		CA8619992391678100AD3A23 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		CADE337C2396FE4200B96ADF /* poc_http.py.zip */ = {isa = PBXFileReference; lastKnownFileType = archive.zip; path = poc_http.py.zip; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CA48918423905BB400D43E60 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CA6C65342394FB6400E72EFA /* libiconv.2.4.0.tbd in Frameworks */,
+				CA6C65322394FB5500E72EFA /* libz.1.2.11.tbd in Frameworks */,
+				CA86199A2391678100AD3A23 /* Security.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		CA48917E23905BB400D43E60 = {
+			isa = PBXGroup;
+			children = (
+				CA4DD607239997D80094979E /* large_batTrojan.zip */,
+				CA4DD605239997B30094979E /* malware.eicar.size.zip */,
+				CA4DD601239927FF0094979E /* atc_poc_sudospawn.sh.zip */,
+				CA1F26E223979675006727EB /* rca_poc1.zip */,
+				CADE337C2396FE4200B96ADF /* poc_http.py.zip */,
+				CA018E5F2395B60F004CE8E6 /* poc_http_py3.py.zip */,
+				CA018E5B2395AB78004CE8E6 /* malware.edr.zip */,
+				CA06A07823954EB500536B52 /* malware.adware.zip */,
+				CA06A07E23954EB500536B52 /* malware.application.zip */,
+				CA06A07523954EB500536B52 /* malware.clean.by.delete.zip */,
+				CA06A07323954EB500536B52 /* malware.deletion.cleanable.zip */,
+				CA06A07223954EB500536B52 /* malware.dialer.zip */,
+				CA06A07C23954EB500536B52 /* malware.eicar.zip */,
+				CA06A07423954EB500536B52 /* malware.keylogger.zip */,
+				CA06A07123954EB500536B52 /* malware.packed.zip */,
+				CA06A07623954EB500536B52 /* malware.pua.zip */,
+				CA06A07723954EB500536B52 /* malware.remains.cleanable.zip */,
+				CA06A07A23954EB500536B52 /* malware.signed.infected.zip */,
+				CA06A07F23954EB500536B52 /* malware.signed.suspected.zip */,
+				CA06A07B23954EB500536B52 /* malware.smartdb.zip */,
+				CA06A08023954EB600536B52 /* malware.spyware.zip */,
+				CA06A07D23954EB500536B52 /* malware.suspected.zip */,
+				CA06A07923954EB500536B52 /* malware.uncleanable.zip */,
+				CA86195D2391626A00AD3A23 /* SSZipArchive */,
+				CA48918923905BB400D43E60 /* The Detonator */,
+				CA48918823905BB400D43E60 /* Products */,
+				CA8619942391663800AD3A23 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		CA48918823905BB400D43E60 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CA48918723905BB400D43E60 /* The Detonator.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CA48918923905BB400D43E60 /* The Detonator */ = {
+			isa = PBXGroup;
+			children = (
+				CA48918A23905BB400D43E60 /* AppDelegate.h */,
+				CA48918B23905BB400D43E60 /* AppDelegate.m */,
+				CA48918D23905BB500D43E60 /* Assets.xcassets */,
+				CA48918F23905BB500D43E60 /* MainMenu.xib */,
+				CA48919223905BB500D43E60 /* Info.plist */,
+				CA48919323905BB500D43E60 /* main.m */,
+				CA48919523905BB500D43E60 /* The_Detonator.entitlements */,
+				CA48919B23906E1C00D43E60 /* Samples.h */,
+				CA48919C23906E1C00D43E60 /* Samples.m */,
+			);
+			path = "The Detonator";
+			sourceTree = "<group>";
+		};
+		CA86195D2391626A00AD3A23 /* SSZipArchive */ = {
+			isa = PBXGroup;
+			children = (
+				CA8619802391628400AD3A23 /* Info.plist */,
+				CA8619612391628400AD3A23 /* minizip */,
+				CA8619602391628400AD3A23 /* SSZipArchive.h */,
+				CA8619812391628400AD3A23 /* SSZipArchive.m */,
+				CA86195E2391628400AD3A23 /* SSZipCommon.h */,
+				CA86195F2391628400AD3A23 /* ZipArchive.h */,
+			);
+			path = SSZipArchive;
+			sourceTree = "<group>";
+		};
+		CA8619612391628400AD3A23 /* minizip */ = {
+			isa = PBXGroup;
+			children = (
+				CA8619622391628400AD3A23 /* mz_strm_os_posix.c */,
+				CA8619632391628400AD3A23 /* mz_strm_pkcrypt.c */,
+				CA8619642391628400AD3A23 /* mz_strm_wzaes.h */,
+				CA8619652391628400AD3A23 /* mz_compat.h */,
+				CA8619662391628400AD3A23 /* mz_strm_zlib.c */,
+				CA8619672391628400AD3A23 /* mz_zip.c */,
+				CA8619682391628400AD3A23 /* mz_os.h */,
+				CA8619692391628400AD3A23 /* LICENSE */,
+				CA86196A2391628400AD3A23 /* mz_zip_rw.c */,
+				CA86196B2391628400AD3A23 /* mz_strm_split.h */,
+				CA86196C2391628400AD3A23 /* mz_strm_buf.h */,
+				CA86196D2391628400AD3A23 /* mz_crypt_apple.c */,
+				CA86196E2391628400AD3A23 /* mz_strm.h */,
+				CA86196F2391628400AD3A23 /* mz_strm_mem.c */,
+				CA8619702391628400AD3A23 /* mz_crypt.c */,
+				CA8619712391628400AD3A23 /* mz_strm_wzaes.c */,
+				CA8619722391628400AD3A23 /* mz_strm_zlib.h */,
+				CA8619732391628400AD3A23 /* mz_compat.c */,
+				CA8619742391628400AD3A23 /* mz_strm_pkcrypt.h */,
+				CA8619752391628400AD3A23 /* mz_zip_rw.h */,
+				CA8619762391628400AD3A23 /* mz_os.c */,
+				CA8619772391628400AD3A23 /* mz_zip.h */,
+				CA8619782391628400AD3A23 /* mz_os_posix.c */,
+				CA8619792391628400AD3A23 /* mz.h */,
+				CA86197A2391628400AD3A23 /* mz_strm_buf.c */,
+				CA86197B2391628400AD3A23 /* mz_strm_split.c */,
+				CA86197C2391628400AD3A23 /* mz_crypt.h */,
+				CA86197D2391628400AD3A23 /* mz_strm_mem.h */,
+				CA86197E2391628400AD3A23 /* mz_strm.c */,
+				CA86197F2391628400AD3A23 /* mz_strm_os.h */,
+			);
+			path = minizip;
+			sourceTree = "<group>";
+		};
+		CA8619942391663800AD3A23 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CA6C65332394FB6400E72EFA /* libiconv.2.4.0.tbd */,
+				CA6C65312394FB5500E72EFA /* libz.1.2.11.tbd */,
+				CA8619992391678100AD3A23 /* Security.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CA48918623905BB400D43E60 /* The Detonator */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CA48919823905BB500D43E60 /* Build configuration list for PBXNativeTarget "The Detonator" */;
+			buildPhases = (
+				CA48918323905BB400D43E60 /* Sources */,
+				CA48918423905BB400D43E60 /* Frameworks */,
+				CA48918523905BB400D43E60 /* Resources */,
+				CA06A06F23954E9600536B52 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "The Detonator";
+			productName = "The Detonator";
+			productReference = CA48918723905BB400D43E60 /* The Detonator.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CA48917F23905BB400D43E60 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1120;
+				ORGANIZATIONNAME = sergiuandrone;
+				TargetAttributes = {
+					CA48918623905BB400D43E60 = {
+						CreatedOnToolsVersion = 11.2.1;
+					};
+				};
+			};
+			buildConfigurationList = CA48918223905BB400D43E60 /* Build configuration list for PBXProject "The Detonator" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CA48917E23905BB400D43E60;
+			productRefGroup = CA48918823905BB400D43E60 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CA48918623905BB400D43E60 /* The Detonator */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CA48918523905BB400D43E60 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CA48918E23905BB500D43E60 /* Assets.xcassets in Resources */,
+				CA48919123905BB500D43E60 /* MainMenu.xib in Resources */,
+				CA8619862391628400AD3A23 /* LICENSE in Resources */,
+				CA8619922391628400AD3A23 /* Info.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CA48918323905BB400D43E60 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CA86198E2391628400AD3A23 /* mz_os_posix.c in Sources */,
+				CA8619852391628400AD3A23 /* mz_zip.c in Sources */,
+				CA8619912391628400AD3A23 /* mz_strm.c in Sources */,
+				CA86198B2391628400AD3A23 /* mz_strm_wzaes.c in Sources */,
+				CA8619932391628400AD3A23 /* SSZipArchive.m in Sources */,
+				CA48919D23906E1C00D43E60 /* Samples.m in Sources */,
+				CA86198C2391628400AD3A23 /* mz_compat.c in Sources */,
+				CA86198D2391628400AD3A23 /* mz_os.c in Sources */,
+				CA86198F2391628400AD3A23 /* mz_strm_buf.c in Sources */,
+				CA8619832391628400AD3A23 /* mz_strm_pkcrypt.c in Sources */,
+				CA8619902391628400AD3A23 /* mz_strm_split.c in Sources */,
+				CA86198A2391628400AD3A23 /* mz_crypt.c in Sources */,
+				CA48919423905BB500D43E60 /* main.m in Sources */,
+				CA8619882391628400AD3A23 /* mz_crypt_apple.c in Sources */,
+				CA8619842391628400AD3A23 /* mz_strm_zlib.c in Sources */,
+				CA8619872391628400AD3A23 /* mz_zip_rw.c in Sources */,
+				CA8619822391628400AD3A23 /* mz_strm_os_posix.c in Sources */,
+				CA8619892391628400AD3A23 /* mz_strm_mem.c in Sources */,
+				CA48918C23905BB400D43E60 /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		CA48918F23905BB500D43E60 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CA48919023905BB500D43E60 /* Base */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		CA48919623905BB500D43E60 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					HAVE_INTTYPES_H,
+					HAVE_PKCRYPT,
+					HAVE_STDINT_H,
+					HAVE_WZAES,
+					HAVE_ZLIB,
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				NEW_SETTING = "";
+				ONLY_ACTIVE_ARCH = NO;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		CA48919723905BB500D43E60 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					HAVE_INTTYPES_H,
+					HAVE_PKCRYPT,
+					HAVE_STDINT_H,
+					HAVE_WZAES,
+					HAVE_ZLIB,
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				NEW_SETTING = "";
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		CA48919923905BB500D43E60 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "The Detonator/The_Detonator.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = "The Detonator/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "-.The-Detonator";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		CA48919A23905BB500D43E60 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "The Detonator/The_Detonator.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = "The Detonator/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "-.The-Detonator";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CA48918223905BB400D43E60 /* Build configuration list for PBXProject "The Detonator" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CA48919623905BB500D43E60 /* Debug */,
+				CA48919723905BB500D43E60 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CA48919823905BB500D43E60 /* Build configuration list for PBXNativeTarget "The Detonator" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CA48919923905BB500D43E60 /* Debug */,
+				CA48919A23905BB500D43E60 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CA48917F23905BB400D43E60 /* Project object */;
+}

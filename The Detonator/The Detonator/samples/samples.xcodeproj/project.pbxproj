@@ -1,0 +1,366 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CA8619AD23930FED00AD3A23 /* tes_file.txt in Resources */ = {isa = PBXBuildFile; fileRef = CA8619AC23930FED00AD3A23 /* tes_file.txt */; };
+		CA8619AF239317F600AD3A23 /* malware.adware.zip in Resources */ = {isa = PBXBuildFile; fileRef = CA8619AE239317F600AD3A23 /* malware.adware.zip */; };
+		CA8619C02393180700AD3A23 /* malware.signed.suspected.zip in Resources */ = {isa = PBXBuildFile; fileRef = CA8619B02393180700AD3A23 /* malware.signed.suspected.zip */; };
+		CA8619C12393180700AD3A23 /* malware.uncleanable.zip in Resources */ = {isa = PBXBuildFile; fileRef = CA8619B12393180700AD3A23 /* malware.uncleanable.zip */; };
+		CA8619C22393180700AD3A23 /* malware.application.zip in Resources */ = {isa = PBXBuildFile; fileRef = CA8619B22393180700AD3A23 /* malware.application.zip */; };
+		CA8619C32393180700AD3A23 /* malware.signed.infected.zip in Resources */ = {isa = PBXBuildFile; fileRef = CA8619B32393180700AD3A23 /* malware.signed.infected.zip */; };
+		CA8619C42393180700AD3A23 /* malware.clean.by.delete.zip in Resources */ = {isa = PBXBuildFile; fileRef = CA8619B42393180700AD3A23 /* malware.clean.by.delete.zip */; };
+		CA8619C52393180700AD3A23 /* malware.smartdb.zip in Resources */ = {isa = PBXBuildFile; fileRef = CA8619B52393180700AD3A23 /* malware.smartdb.zip */; };
+		CA8619C62393180700AD3A23 /* malware.keylogger.zip in Resources */ = {isa = PBXBuildFile; fileRef = CA8619B62393180700AD3A23 /* malware.keylogger.zip */; };
+		CA8619C72393180700AD3A23 /* malware.remains.cleanable.zip in Resources */ = {isa = PBXBuildFile; fileRef = CA8619B72393180700AD3A23 /* malware.remains.cleanable.zip */; };
+		CA8619C82393180700AD3A23 /* malware.pua.zip in Resources */ = {isa = PBXBuildFile; fileRef = CA8619B82393180700AD3A23 /* malware.pua.zip */; };
+		CA8619C92393180700AD3A23 /* malware.packed.zip in Resources */ = {isa = PBXBuildFile; fileRef = CA8619B92393180700AD3A23 /* malware.packed.zip */; };
+		CA8619CA2393180700AD3A23 /* malware.suspected.zip in Resources */ = {isa = PBXBuildFile; fileRef = CA8619BA2393180700AD3A23 /* malware.suspected.zip */; };
+		CA8619CB2393180700AD3A23 /* malware.dialer.zip in Resources */ = {isa = PBXBuildFile; fileRef = CA8619BB2393180700AD3A23 /* malware.dialer.zip */; };
+		CA8619CC2393180700AD3A23 /* malware.eicar.zip in Resources */ = {isa = PBXBuildFile; fileRef = CA8619BC2393180700AD3A23 /* malware.eicar.zip */; };
+		CA8619CD2393180700AD3A23 /* malware.deletion.cleanable.zip in Resources */ = {isa = PBXBuildFile; fileRef = CA8619BD2393180700AD3A23 /* malware.deletion.cleanable.zip */; };
+		CA8619CE2393180700AD3A23 /* malware.spyware.zip in Resources */ = {isa = PBXBuildFile; fileRef = CA8619BE2393180700AD3A23 /* malware.spyware.zip */; };
+		CA8619CF2393180700AD3A23 /* malware.multiple.eicar.zip in Resources */ = {isa = PBXBuildFile; fileRef = CA8619BF2393180700AD3A23 /* malware.multiple.eicar.zip */; };
+		CA8619D22393D75E00AD3A23 /* arhiva_test_pass.zip in Resources */ = {isa = PBXBuildFile; fileRef = CA8619D02393D75E00AD3A23 /* arhiva_test_pass.zip */; };
+		CA8619D32393D75E00AD3A23 /* arhiva_test.zip in Resources */ = {isa = PBXBuildFile; fileRef = CA8619D12393D75E00AD3A23 /* arhiva_test.zip */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		CA55510123912AA400B2C91A /* samples.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = samples.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		CA55510423912AA400B2C91A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CA8619AC23930FED00AD3A23 /* tes_file.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = tes_file.txt; sourceTree = "<group>"; };
+		CA8619AE239317F600AD3A23 /* malware.adware.zip */ = {isa = PBXFileReference; lastKnownFileType = archive.zip; name = malware.adware.zip; path = ../../../../../Desktop/virusi/1.0.0.18/samples/malware.adware.zip; sourceTree = "<group>"; };
+		CA8619B02393180700AD3A23 /* malware.signed.suspected.zip */ = {isa = PBXFileReference; lastKnownFileType = archive.zip; path = malware.signed.suspected.zip; sourceTree = "<group>"; };
+		CA8619B12393180700AD3A23 /* malware.uncleanable.zip */ = {isa = PBXFileReference; lastKnownFileType = archive.zip; path = malware.uncleanable.zip; sourceTree = "<group>"; };
+		CA8619B22393180700AD3A23 /* malware.application.zip */ = {isa = PBXFileReference; lastKnownFileType = archive.zip; path = malware.application.zip; sourceTree = "<group>"; };
+		CA8619B32393180700AD3A23 /* malware.signed.infected.zip */ = {isa = PBXFileReference; lastKnownFileType = archive.zip; path = malware.signed.infected.zip; sourceTree = "<group>"; };
+		CA8619B42393180700AD3A23 /* malware.clean.by.delete.zip */ = {isa = PBXFileReference; lastKnownFileType = archive.zip; path = malware.clean.by.delete.zip; sourceTree = "<group>"; };
+		CA8619B52393180700AD3A23 /* malware.smartdb.zip */ = {isa = PBXFileReference; lastKnownFileType = archive.zip; path = malware.smartdb.zip; sourceTree = "<group>"; };
+		CA8619B62393180700AD3A23 /* malware.keylogger.zip */ = {isa = PBXFileReference; lastKnownFileType = archive.zip; path = malware.keylogger.zip; sourceTree = "<group>"; };
+		CA8619B72393180700AD3A23 /* malware.remains.cleanable.zip */ = {isa = PBXFileReference; lastKnownFileType = archive.zip; path = malware.remains.cleanable.zip; sourceTree = "<group>"; };
+		CA8619B82393180700AD3A23 /* malware.pua.zip */ = {isa = PBXFileReference; lastKnownFileType = archive.zip; path = malware.pua.zip; sourceTree = "<group>"; };
+		CA8619B92393180700AD3A23 /* malware.packed.zip */ = {isa = PBXFileReference; lastKnownFileType = archive.zip; path = malware.packed.zip; sourceTree = "<group>"; };
+		CA8619BA2393180700AD3A23 /* malware.suspected.zip */ = {isa = PBXFileReference; lastKnownFileType = archive.zip; path = malware.suspected.zip; sourceTree = "<group>"; };
+		CA8619BB2393180700AD3A23 /* malware.dialer.zip */ = {isa = PBXFileReference; lastKnownFileType = archive.zip; path = malware.dialer.zip; sourceTree = "<group>"; };
+		CA8619BC2393180700AD3A23 /* malware.eicar.zip */ = {isa = PBXFileReference; lastKnownFileType = archive.zip; path = malware.eicar.zip; sourceTree = "<group>"; };
+		CA8619BD2393180700AD3A23 /* malware.deletion.cleanable.zip */ = {isa = PBXFileReference; lastKnownFileType = archive.zip; path = malware.deletion.cleanable.zip; sourceTree = "<group>"; };
+		CA8619BE2393180700AD3A23 /* malware.spyware.zip */ = {isa = PBXFileReference; lastKnownFileType = archive.zip; path = malware.spyware.zip; sourceTree = "<group>"; };
+		CA8619BF2393180700AD3A23 /* malware.multiple.eicar.zip */ = {isa = PBXFileReference; lastKnownFileType = archive.zip; path = malware.multiple.eicar.zip; sourceTree = "<group>"; };
+		CA8619D02393D75E00AD3A23 /* arhiva_test_pass.zip */ = {isa = PBXFileReference; lastKnownFileType = archive.zip; path = arhiva_test_pass.zip; sourceTree = "<group>"; };
+		CA8619D12393D75E00AD3A23 /* arhiva_test.zip */ = {isa = PBXFileReference; lastKnownFileType = archive.zip; path = arhiva_test.zip; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CA5550FE23912AA400B2C91A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		CA5550F823912AA400B2C91A = {
+			isa = PBXGroup;
+			children = (
+				CA55510323912AA400B2C91A /* samples */,
+				CA55510223912AA400B2C91A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		CA55510223912AA400B2C91A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CA55510123912AA400B2C91A /* samples.bundle */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CA55510323912AA400B2C91A /* samples */ = {
+			isa = PBXGroup;
+			children = (
+				CA8619AE239317F600AD3A23 /* malware.adware.zip */,
+				CA8619B22393180700AD3A23 /* malware.application.zip */,
+				CA8619B42393180700AD3A23 /* malware.clean.by.delete.zip */,
+				CA8619BD2393180700AD3A23 /* malware.deletion.cleanable.zip */,
+				CA8619BB2393180700AD3A23 /* malware.dialer.zip */,
+				CA8619BC2393180700AD3A23 /* malware.eicar.zip */,
+				CA8619B62393180700AD3A23 /* malware.keylogger.zip */,
+				CA8619D02393D75E00AD3A23 /* arhiva_test_pass.zip */,
+				CA8619D12393D75E00AD3A23 /* arhiva_test.zip */,
+				CA8619BF2393180700AD3A23 /* malware.multiple.eicar.zip */,
+				CA8619B92393180700AD3A23 /* malware.packed.zip */,
+				CA8619B82393180700AD3A23 /* malware.pua.zip */,
+				CA8619B72393180700AD3A23 /* malware.remains.cleanable.zip */,
+				CA8619B32393180700AD3A23 /* malware.signed.infected.zip */,
+				CA8619B02393180700AD3A23 /* malware.signed.suspected.zip */,
+				CA8619B52393180700AD3A23 /* malware.smartdb.zip */,
+				CA8619BE2393180700AD3A23 /* malware.spyware.zip */,
+				CA8619BA2393180700AD3A23 /* malware.suspected.zip */,
+				CA8619B12393180700AD3A23 /* malware.uncleanable.zip */,
+				CA8619AC23930FED00AD3A23 /* tes_file.txt */,
+				CA55510423912AA400B2C91A /* Info.plist */,
+			);
+			path = samples;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CA55510023912AA400B2C91A /* samples */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CA55510723912AA400B2C91A /* Build configuration list for PBXNativeTarget "samples" */;
+			buildPhases = (
+				CA5550FD23912AA400B2C91A /* Sources */,
+				CA5550FE23912AA400B2C91A /* Frameworks */,
+				CA5550FF23912AA400B2C91A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = samples;
+			productName = samples;
+			productReference = CA55510123912AA400B2C91A /* samples.bundle */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CA5550F923912AA400B2C91A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1120;
+				ORGANIZATIONNAME = sergiuandrone;
+				TargetAttributes = {
+					CA55510023912AA400B2C91A = {
+						CreatedOnToolsVersion = 11.2.1;
+					};
+				};
+			};
+			buildConfigurationList = CA5550FC23912AA400B2C91A /* Build configuration list for PBXProject "samples" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CA5550F823912AA400B2C91A;
+			productRefGroup = CA55510223912AA400B2C91A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CA55510023912AA400B2C91A /* samples */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CA5550FF23912AA400B2C91A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CA8619C62393180700AD3A23 /* malware.keylogger.zip in Resources */,
+				CA8619D22393D75E00AD3A23 /* arhiva_test_pass.zip in Resources */,
+				CA8619C52393180700AD3A23 /* malware.smartdb.zip in Resources */,
+				CA8619CF2393180700AD3A23 /* malware.multiple.eicar.zip in Resources */,
+				CA8619AF239317F600AD3A23 /* malware.adware.zip in Resources */,
+				CA8619C72393180700AD3A23 /* malware.remains.cleanable.zip in Resources */,
+				CA8619C82393180700AD3A23 /* malware.pua.zip in Resources */,
+				CA8619C12393180700AD3A23 /* malware.uncleanable.zip in Resources */,
+				CA8619C22393180700AD3A23 /* malware.application.zip in Resources */,
+				CA8619CA2393180700AD3A23 /* malware.suspected.zip in Resources */,
+				CA8619CC2393180700AD3A23 /* malware.eicar.zip in Resources */,
+				CA8619C02393180700AD3A23 /* malware.signed.suspected.zip in Resources */,
+				CA8619C42393180700AD3A23 /* malware.clean.by.delete.zip in Resources */,
+				CA8619AD23930FED00AD3A23 /* tes_file.txt in Resources */,
+				CA8619D32393D75E00AD3A23 /* arhiva_test.zip in Resources */,
+				CA8619CB2393180700AD3A23 /* malware.dialer.zip in Resources */,
+				CA8619C92393180700AD3A23 /* malware.packed.zip in Resources */,
+				CA8619C32393180700AD3A23 /* malware.signed.infected.zip in Resources */,
+				CA8619CE2393180700AD3A23 /* malware.spyware.zip in Resources */,
+				CA8619CD2393180700AD3A23 /* malware.deletion.cleanable.zip in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CA5550FD23912AA400B2C91A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		CA55510523912AA400B2C91A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		CA55510623912AA400B2C91A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		CA55510823912AA400B2C91A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = samples/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
+				PRODUCT_BUNDLE_IDENTIFIER = "-.samples";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Debug;
+		};
+		CA55510923912AA400B2C91A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = samples/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
+				PRODUCT_BUNDLE_IDENTIFIER = "-.samples";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CA5550FC23912AA400B2C91A /* Build configuration list for PBXProject "samples" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CA55510523912AA400B2C91A /* Debug */,
+				CA55510623912AA400B2C91A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CA55510723912AA400B2C91A /* Build configuration list for PBXNativeTarget "samples" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CA55510823912AA400B2C91A /* Debug */,
+				CA55510923912AA400B2C91A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CA5550F923912AA400B2C91A /* Project object */;
+}
