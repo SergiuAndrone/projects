@@ -11,13 +11,31 @@ class Logger:
         self.create_log_file()
 
     def create_log_file(self):
+        """
+        Creates the test results file in the following location:
+
+        Mac OS: "/Users/<user>/Desktop/test_results.txt"
+        Windows: "C:/Users/Public/Documents/test_results.txt"
+
+        Returns:
+            None
+        """
         try:
             with open(self.log_location, 'w') as f:
                 f.write('*'*50 + '\n' + ' '*17 + 'TEST RESULTS\n' + '*'*50 + '\n\n')
         except Exception as e:
             print(f"Results file couldn't be created. The test result won't be recoreded. Error: {e}")
 
-    def log_data(self, text):
+    def log_data(self, text=None):
+        """
+        Writes text in the test results file
+
+        Args:
+            text (str): the text to be written
+
+        Returns:
+             None
+        """
         try:
             with open(self.log_location, 'a') as f:
                 f.write(text + '\n')
@@ -34,6 +52,12 @@ class Helper:
         return self.__page
 
     def open_page(self):
+        """
+        Opens __page using the webdriver session received as argument
+
+        Returns:
+            The time took for the page to load
+        """
         time_start = time.time()
         self.__session.get(self.__page)
         time_end = time.time()
@@ -41,6 +65,12 @@ class Helper:
         return time_end - time_start
 
     def find_element_by_id(self, element_id=None):
+        """
+        Find an element by id
+
+        Returns:
+             The Webpage element if found, None otherwise
+        """
         element = None
         try:
             element = self.__session.find_element_by_id(id_=element_id)
@@ -49,6 +79,12 @@ class Helper:
         return element
 
     def find_element_by_class(self, cls=None):
+        """
+        Find an element by class
+
+        Returns:
+             The Webpage element if found, None otherwise
+        """
         element = None
         try:
             element = self.__session.find_element_by_class_name(name=cls)
@@ -57,6 +93,12 @@ class Helper:
         return element
 
     def find_element_by_link(self, link_text):
+        """
+        Find an element by link
+
+        Returns:
+             The Webpage element if found, None otherwise
+        """
         element = None
         try:
             element = self.__session.find_element_by_link_text(link_text=link_text)
@@ -65,6 +107,12 @@ class Helper:
         return element
 
     def find_element_by_xpath(self, xpath):
+        """
+        Find an element by xpath
+
+        Returns:
+             The Webpage element if found, None otherwise
+        """
         element = None
         try:
             element = self.__session.find_element_by_xpath(xpath=xpath)
@@ -77,10 +125,6 @@ class Helper:
 
 
 class MainPage:
-    """
-    Contains an object that links to the main page (used for reload between tests)
-    Contains the 'Got it' button used for accepting the cookies
-    """
     def __init__(self, session):
         self.__session = session
         self.helper = Helper(session=self.__session)
@@ -154,6 +198,7 @@ class FlightsMenu:
         self.__remove_child = "/html//div[@id='flights']/div/div[@class='form-search-main-01']/form[@role='search']/div[@class='form-inner']/div[3]/div[3]/div[@class='col-inner']/div/div[2]/div[@class='form-group form-spin-group']/div[@class='form-icon-left']/div/span[@class='input-group-btn-vertical']/button[2]"
         self.__add_infant = "/html//div[@id='flights']/div/div[@class='form-search-main-01']/form[@role='search']/div[@class='form-inner']/div[3]/div[3]/div[@class='col-inner']/div/div[3]/div[@class='form-group form-spin-group']/div[@class='form-icon-left']/div/span[@class='input-group-btn-vertical']/button[1]"
         self.__remove_infant = "/html//div[@id='flights']/div/div[@class='form-search-main-01']/form[@role='search']/div[@class='form-inner']/div[3]/div[3]/div[@class='col-inner']/div/div[3]/div[@class='form-group form-spin-group']/div[@class='form-icon-left']/div/span[@class='input-group-btn-vertical']/button[2]"
+        self.__class_selector = "/html//div[@id='flights']/div//form[@role='search']/div/div[1]/div[2]/div/div/a/div"
 
         # name of the labels in "Flights" submenu
         self.from_text = "FROM"
@@ -185,6 +230,7 @@ class FlightsMenu:
         self.__from_inactive = "//div[@id='s2id_location_from']//span[@class='select2-chosen']"
         self.__to_inactive = "//div[@id='s2id_location_to']//span[@class='select2-chosen']"
         self.__enter_text = "//div[@id='select2-drop']//input[@type='text']"
+        self.__depart_field = "/html//input[@id='FlightsDateStart']"
 
     @property
     def flights_button(self):
@@ -237,6 +283,14 @@ class FlightsMenu:
     @property
     def one_way_button(self):
         return self.helper.find_element_by_xpath(xpath=self.one_way_label)
+
+    @property
+    def class_selector(self):
+        return self.helper.find_element_by_xpath(xpath=self.__class_selector)
+
+    @property
+    def depart_field(self):
+        return self.helper.find_element_by_xpath(xpath=self.__depart_field)
 
 
 class HotelsMenu:
@@ -305,6 +359,7 @@ class Tests:
     def __init__(self):
         self.__session = webdriver.Chrome()
         self.__session.set_page_load_timeout(time_to_wait=10)
+        # self.__session.implicitly_wait(5)
         self.page_loaded = True
 
         self.logger = Logger()
@@ -317,6 +372,12 @@ class Tests:
         self.visa_menu = VisaMenu(session=self.__session)
 
     def test_00(self):
+        """
+        Loads the page and accepts the cookies
+
+        Returns:
+            None
+        """
         time_loaded = self.helper.open_page()
         time.sleep(5)
 
@@ -333,6 +394,12 @@ class Tests:
             self.page_loaded = False
 
     def test_01(self):
+        """
+        Searches for the 5 buttons of the Search menu and clicks on them
+
+        Returns:
+            None
+        """
         self.logger.log_data("TEST 01 >> Checking if the following buttons exists, are clickable and become active: \n")
 
         buttons = {"Flights": self.flights_menu.flights_button,
@@ -353,6 +420,12 @@ class Tests:
         self.end_test()
 
     def test_02(self):
+        """
+        Checks if all the elements specific to the 'Hotels' menu are present and have the correct name
+
+        Returns:
+            None
+        """
         self.logger.log_data("TEST 02 >> checking the labels in: Hotels\n")
 
         expected_labels = {self.hotels_menu.destination_text: self.hotels_menu.destination_label,
@@ -381,6 +454,12 @@ class Tests:
         self.end_test()
 
     def test_03(self):
+        """
+        Checks if all the elements specific to the 'Flights' menu are present and have the correct name
+
+        Returns:
+            None
+        """
         self.logger.log_data("TEST 03 >> checking the labels in: Flights\n")
 
         expected_labels = {self.flights_menu.from_text: self.flights_menu.from_label,
@@ -413,6 +492,12 @@ class Tests:
         self.end_test()
 
     def test_04(self):
+        """
+        Searches the interactive elements from the Hotels menu and performs actions on them (click, submit, fill ..., depending on the element type)
+
+        Returns:
+            None
+        """
         self.logger.log_data("TEST 04 >> checking the interactive elements in: Hotels\n")
 
         # fill in the DESTINATION field
@@ -466,6 +551,12 @@ class Tests:
         self.end_test()
 
     def test_05(self):
+        """
+        Searches the interactive elements from the Flights menu and performs actions on them (click, submit, fill ..., depending on the element type)
+
+        Returns:
+            None
+        """
         self.logger.log_data("TEST 05 >> checking the interactive elements in: Flights\n")
 
         is_valid = True
@@ -512,7 +603,7 @@ class Tests:
                 self.logger.log_data(f"Fill the TO field  >>  FAIL  >>  Error: {e}")
                 is_valid = False
 
-        # check the ADD (+) and REMOVE (-) buttons
+        # check the other interactive elements
         elements = {"Add adult (+)": self.flights_menu.add_adults_button,
                     "Remove adult (-)": self.flights_menu.remove_adults_button,
                     "Add child (+)": self.flights_menu.add_child_button,
@@ -520,11 +611,15 @@ class Tests:
                     "Add infant (+)": self.flights_menu.add_infant_button,
                     "Remove infant (-)": self.flights_menu.remove_infant_button,
                     "Round trip": self.flights_menu.round_trip_button,
-                    "One way": self.flights_menu.one_way_button}
+                    "One way": self.flights_menu.one_way_button,
+                    "Class selector": self.flights_menu.class_selector}
 
         for key in elements.keys():
             try:
                 elements[key].click()
+                time.sleep(1)
+                if key == "Class selector":
+                    elements[key].click()
                 self.logger.log_data(f"'{key}' element  >>  PASS")
             except Exception as e:
                 self.logger.log_data(f"'{key}' element  >>  FAIL  >>  Error: {e}")
