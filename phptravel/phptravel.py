@@ -7,7 +7,7 @@ import sys
 
 class Logger:
     def __init__(self):
-        self.log_location = f"/Users/{getpass.getuser()}/Desktop/test_results.txt" if sys.platform == "darwin" else "C:/Users/Public/Documents/test_results.txt"
+        self.log_location = f"/Users/{getpass.getuser()}/test_results.txt" if sys.platform == "darwin" else "C:/Users/Public/Documents/test_results.txt"
         self.create_log_file()
 
     def create_log_file(self):
@@ -230,7 +230,6 @@ class FlightsMenu:
         self.__from_inactive = "//div[@id='s2id_location_from']//span[@class='select2-chosen']"
         self.__to_inactive = "//div[@id='s2id_location_to']//span[@class='select2-chosen']"
         self.__enter_text = "//div[@id='select2-drop']//input[@type='text']"
-        self.__depart_field = "/html//input[@id='FlightsDateStart']"
 
     @property
     def flights_button(self):
@@ -287,10 +286,6 @@ class FlightsMenu:
     @property
     def class_selector(self):
         return self.helper.find_element_by_xpath(xpath=self.__class_selector)
-
-    @property
-    def depart_field(self):
-        return self.helper.find_element_by_xpath(xpath=self.__depart_field)
 
 
 class HotelsMenu:
@@ -620,6 +615,8 @@ class Tests:
                 time.sleep(1)
                 if key == "Class selector":
                     elements[key].click()
+                if key == "Select date":
+                    self.logger.log_data(f"'{key.text}' element  >>  PASS")
                 self.logger.log_data(f"'{key}' element  >>  PASS")
             except Exception as e:
                 self.logger.log_data(f"'{key}' element  >>  FAIL  >>  Error: {e}")
