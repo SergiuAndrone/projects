@@ -23,6 +23,7 @@ class Logger:
         try:
             with open(self.log_location, 'w') as f:
                 f.write('*'*50 + '\n' + ' '*17 + 'TEST RESULTS\n' + '*'*50 + '\n\n')
+                print(f"\n\nTest results are saved in: {self.log_location}\n\n")
         except Exception as e:
             print(f"Results file couldn't be created. The test result won't be recoreded. Error: {e}")
 
