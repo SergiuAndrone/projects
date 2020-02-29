@@ -354,6 +354,7 @@ class Tests:
     def __init__(self):
         self.__session = webdriver.Chrome()
         self.__session.set_page_load_timeout(time_to_wait=10)
+        self.__session.fullscreen_window()
         # self.__session.implicitly_wait(5)
         self.page_loaded = True
 
