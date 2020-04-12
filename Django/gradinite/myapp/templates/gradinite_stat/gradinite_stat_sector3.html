@@ -1,0 +1,40 @@
+{% extends "default.html" %}
+
+{% block title %}
+    <title>gradinitamea.ro</title>
+{% endblock %}
+
+
+{% block content %}
+  <h3 align="center">Gradinite de stat sector 3</h3>
+{% endblock %}
+
+{% block sidebar %}
+<br>
+<br>
+<br>
+<br>
+<br>
+
+        <form>
+            <button type="submit" formaction="{% url 'gradinite_stat/sector1' %}">Sector 1</button>
+        </form>
+        <form>
+            <button type="submit" formaction="{% url 'gradinite_stat/sector2' %}">Sector 2</button>
+        </form>
+        <form>
+            <button type="submit" formaction="{% url 'gradinite_stat/sector3' %}">Sector 3</button>
+        </form>
+        <form>
+            <button type="submit" formaction="{% url 'gradinite_stat/sector4' %}">Sector 4</button>
+        </form>
+        <form>
+            <button type="submit" formaction="{% url 'gradinite_stat/sector5' %}">Sector 5</button>
+        </form>
+        <form>
+            <button type="submit" formaction="{% url 'gradinite_stat/sector6' %}">Sector 6</button>
+        </form>
+        <form>
+            <button type="submit" formaction="{% url 'gradinite_stat/ilfov' %}">Ilfov</button>
+        </form>
+{% endblock %}

@@ -1,0 +1,18 @@
+{% extends "default.html" %}
+
+
+{% block sidebar %}
+
+<div align="center">
+    <form>
+        <button type="submit" formaction="{% url 'gradinite_private/sector1' %}">Sector 1</button>
+        <button type="submit" formaction="{% url 'gradinite_private/sector2' %}">Sector 2</button>
+        <button type="submit" formaction="{% url 'gradinite_private/sector3' %}">Sector 3</button>
+        <button type="submit" formaction="{% url 'gradinite_private/sector4' %}">Sector 4</button>
+        <button type="submit" formaction="{% url 'gradinite_private/sector5' %}">Sector 5</button>
+        <button type="submit" formaction="{% url 'gradinite_private/sector6' %}">Sector 6</button>
+        <button type="submit" formaction="{% url 'gradinite_private/ilfov' %}">Ilfov</button>
+    </form>
+</div>
+
+{% endblock %}
