@@ -1,0 +1,40 @@
+{% extends "gradinite_private/gradinite_private_template.html" %}
+
+<script>
+  document.getElementById('imagine').src = "/static/photos" + item
+</script>
+
+{% block content %}
+  <h3 align="center">Gradinite private sector 1</h3>
+{% endblock %}
+
+{% block text %}
+
+  {% for item in gradinite.values %}
+    <div class="custom-cls">
+        {% for desc, val in item.items %}
+            {{ desc }}: <i>{{ val }}</i>
+            <br>
+        {% endfor %}
+
+        <img align="center" id="imagine" style="width: 200px" src="/static/photos/{{ item.Nume }}.jpg">
+
+
+        <div>
+        <script type="module" src="file01.js">
+            import {mmm} from './file01.js';
+            console.log("this runs from html");
+            mmm();
+        </script>
+        <script>
+            console.log("bau");
+        </script>
+    </div>
+
+
+    </div>
+
+
+  {% endfor %}
+
+{% endblock %}
