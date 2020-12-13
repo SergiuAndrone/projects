@@ -1,8 +1,13 @@
 {
   "name": "Testcafe",
   "version": "1.0.0",
-  "dependencies": {},
-  "devDependencies": {
+  "type": "module",
+  "dependencies": {
+    "appium": "^1.19.0",
+    "chromium": "^3.0.2",
+    "minimist": "latest",
+    "selenium-appium": "0.0.16",
+    "selenium-webdriver": "^4.0.0-alpha.7",
     "testcafe": "^1.9.4"
   }
 }

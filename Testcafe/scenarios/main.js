@@ -6,9 +6,7 @@ fixture `test`
     .beforeEach(async t=> {
         await t.maximizeWindow();
         await t.useRole(cookiesAccepted);
-        console.log('end');
-
-})
+}).meta({label:'test'})
 
 test("first test", async t=> {
     await t.wait(5000);
