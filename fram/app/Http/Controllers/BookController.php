@@ -11,7 +11,9 @@ class BookController extends Controller
 {
     public function __construct()
     {
-        $this->middleware('auth');
+        if (str_contains(request()->path(), '/b/create')) {
+            $this->middleware('auth');
+        }
     }
 
     public function create() {
@@ -36,6 +38,17 @@ class BookController extends Controller
         ]);
 
         return redirect('/profile/'.auth()->user()->id);
+    }
+
+    public function index() {
+        $data = explode('=', request()->getQueryString())[1];
+        $searchedTerm = str_replace('%20', ' ', $data);
+
+        $searchResults = Book::where('title', 'like', $searchedTerm.'%')->orWhere('author', 'like', $searchedTerm.'%')->get();
+        return view('books/index', [
+            'books' => $searchResults,
+            'searchedTerm' => $searchedTerm
+        ]);
     }
 
 }

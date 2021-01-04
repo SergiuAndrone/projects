@@ -22,4 +22,6 @@ Auth::routes();
 Route::get('/', [App\Http\Controllers\HomeController::class, 'index']);
 Route::get('/profile/{user}', [App\Http\Controllers\ProfilesController::class, 'index'])->name('profile.show');
 Route::get('/b/create', [App\Http\Controllers\BookController::class, 'create'])->name('book.create');
+Route::get("/b/index", [App\Http\Controllers\BookController::class, 'index'])->name('book.index');
 Route::post("/b", [App\Http\Controllers\BookController::class, 'store'])->name('book.store');
+

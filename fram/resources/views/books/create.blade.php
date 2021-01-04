@@ -2,8 +2,6 @@
 
 @section('content')
     <div class="container">
-
-
         <form action="/b" enctype="multipart/form-data" method="post">
             @csrf
             <div class="row justify-content-center">

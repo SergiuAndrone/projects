@@ -7,7 +7,7 @@
             <div><h3>{{ $user->username }}</h3></div>
             <div class="pb-2">Books for sale: <strong>{{ count($user->books) }}</strong></div>
             <div class="pb-3">Email: {{ $user->email }}</div>
-            @if(auth()->user()->id === $user->id)
+            @if(auth()->user() && (auth()->user()->id === $user->id))
             <a href="/b/create">Adauga anunt</a>
             @endif
         </div>
